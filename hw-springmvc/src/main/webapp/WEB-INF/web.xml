@@ -4,4 +4,17 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>testServlet</servlet-name>
+    <servlet-class>com.yiren.springmvc.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>base-package</param-name>
+      <param-value>com.yiren.springmvc</param-value>
+    </init-param>
+  </servlet>
+  <!-- ... -->
+  <servlet-mapping>
+    <servlet-name>testServlet</servlet-name>
+    <url-pattern>/*</url-pattern>
+  </servlet-mapping>
 </web-app>

@@ -24,9 +24,7 @@ import java.util.Map;
  * @author wanghao
  * create 2017-12-23 17:31
  **/
-@WebServlet(name = "dispatcherServlet", urlPatterns = "/", loadOnStartup = 1, initParams = {
-        @WebInitParam(name = "base-package", value = "com.yiren.springmvc")
-})
+
 public class DispatcherServlet extends HttpServlet {
     /**
      * 基础包路径下所带的包权限定类名
